@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myScript.js"> </script> 
+</head>
+
+<header class="headerp">
+    <div style="padding-left: 15px; padding-top:5px;">  MY PROJECTS </div>
+</header> 
+<br><br>
+
+<body class="myProjects">
+
+    <h1>My Projects</h1><br><br>
+    <div class="container">
+        <div class="project" onclick="toggleDetails('details1')">
+            <img src="C:\Users\Namitha\Downloads\proj1.webp" alt="Project 1">
+            <h3>Ultrasonic Radar System using Arduino</h3>
+            <p>Aimed at calculating the position and speed of an object<br>
+                placed at a distance from the sensor.</p>
+            <div class="project-details" id="details1">
+                <p>The Ultrasonic Radar System using Arduino detects and tracks objects
+                     using an HC-SR04 ultrasonic sensor mounted on a servo motor. The 
+                     Arduino Uno controls the servo to rotate the sensor, measuring the 
+                     distance of objects using ultrasonic pulses. The system calculates 
+                     position using polar coordinates and estimates speed by analyzing 
+                     successive readings. A radar-like interface built with Processing or 
+                     Python GUI visually maps detected objects in real time. This system 
+                     is useful for robotics, security, and obstacle detection applications.</p>
+            </div>
+        </div>
+        <div class="project" onclick="toggleDetails('details2')">
+            <img src="C:\Users\Namitha\Downloads\proj2.webp" alt="Project 2">
+            <h3>Dual Axis Solar Tracker using Arduino</h3>
+            <p>Aimed at programming the Arduino in such a way that <br>the 
+                solar panel rotates in dual axis.</p>
+            <div class="project-details" id="details2">
+                <p>The Dual Axis Solar Tracker using Arduino uses LDR sensors to detect
+                    sunlight direction and controls two servo motors to adjust the solar panel 
+                    along horizontal and vertical axes for maximum efficiency. The Arduino Uno
+                    processes sensor data and moves the panel accordingly, ensuring optimal solar
+                    energy absorption throughout the day. This system improves energy generation by
+                    keeping the panel aligned with the sun at all times.</p>
+            </div>
+        </div>
+        <div class="project" onclick="toggleDetails('details3')">
+            <img src="C:\Users\Namitha\Downloads\proj3.webp" alt="Project 3">
+            <h3>Hotel Management System using Python</h3>
+            <p>This project aimed at creating an effective Hotel <br>
+                Management System with the use of Python Program.</p>
+            <div class="project-details" id="details3">
+                <p>The Hotel Management System using Python is designed to handle
+                    room bookings, check-ins, check-outs, and billing efficiently. Built 
+                    using Python with Tkinter or Flask, it integrates a database (SQLite/MySQL)
+                    to store customer details, room availability, and transactions. The system 
+                    enhances automation, reduces manual work, and improves hotel operations by 
+                    providing a user-friendly interface for staff and guests.</p>
+            </div>
+        </div>
+        <div class="project" onclick="toggleDetails('details4')">
+            <img src="C:\Users\Namitha\Downloads\proj4.webp" alt="Project 4">
+            <h3>IOT Home Automation System</h3>
+            <p>Used ESP32 to build an IOT Home Automation System <br>using 
+                cloud and a mobile app to send and receive data.</p>
+            <div class="project-details" id="details4">
+                <p>This IoT Home Automation System uses an ESP32 microcontroller, 
+                    a cloud platform, and a mobile app to remotely control and monitor 
+                    home appliances. The ESP32 connects to sensors (DHT11, motion sensors) and 
+                    relay modules to collect data and switch appliances on/off. It communicates
+                    with the Firebase cloud via Wi-Fi using MQTT or HTTP protocols, allowing
+                    real-time data storage and remote access. The mobile app, built with Kodular
+                    provides an interface for users to send commands and view live status updates, 
+                    including temperature, security alerts, and scheduled automation.This system 
+                    enhances energy efficiency, security, and convenience by enabling remote and 
+                    automated control of home devices.</p>
+            </div>
+        </div>
+    </div>
+
+<br>
+<div>
+    <button class="back" type="submit"><a style="text-decoration-line: none;color:white;" href="index.html">Back</a></button>
+</div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>
